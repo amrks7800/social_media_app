@@ -97,7 +97,6 @@ export async function getCurrentUser() {
 
     return currentUser.documents[0];
   } catch (error) {
-    console.log(error);
     return null;
   }
 }
@@ -428,6 +427,7 @@ export async function getUserPosts(userId?: string) {
 
 // ============================== GET POPULAR POSTS (BY HIGHEST LIKE COUNT)
 export async function getRecentPosts() {
+  console.log(appwriteConfig.postCollectionId);
   try {
     const posts = await databases.listDocuments(
       appwriteConfig.databaseId,
