@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+import tailwindAnimate from "tailwindcss-animate";
 
 import tailwindAnimate from "tailwindcss-animate";
 
